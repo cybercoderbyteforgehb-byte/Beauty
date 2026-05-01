@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACELOOK - Premium Beauty Parlour | Gunupur</title>
+    <meta name="description" content="FACELOOK Beauty Parlour Gunupur - Bridal Makeup, Hair Styling, Facials, Manicure. Book Now!">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">FACELOOK</div>
+            <div class="loader-dots">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-spa"></i> FACELOOK
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Reveal Your Beauty at <span class="highlight">FACELOOK</span></h1>
+            <p class="hero-subtitle">Professional Beauty Care & Stylish Makeovers in Gunupur</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary book-btn">Book Appointment</a>
+                <a href="tel:+919876543210" class="btn btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Your Appointment</h2>
+            <form class="booking-form" id="bookingForm">
+                <input type="text" placeholder="Your Name *" required>
+                <input type="tel" placeholder="Phone Number *" required>
+                <input type="date" required>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option value="bridal">Bridal Makeup</option>
+                    <option value="hair">Hair Styling</option>
+                    <option value="facial">Facial Treatment</option>
+                    <option value="threading">Threading & Waxing</option>
+                    <option value="manicure">Manicure & Pedicure</option>
+                    <option value="party">Party Makeup</option>
+                    <option value="skincare">Skin Care</option>
+                    <option value="mehendi">Mehendi Design</option>
+                </select>
+                <button type="submit" class="btn btn-primary full-width">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="highlight">FACELOOK</span></h2>
+                <p>Where Beauty Meets Excellence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>FACELOOK is Gunupur's premier beauty parlour offering expert bridal makeup, creative hair styling, advanced skincare, and luxurious spa services. Our certified professionals use premium products for flawless results.</p>
+                    <div class="about-stats">
+                        <div class="stat"><h3>500+</h3><p>Happy Clients</p></div>
+                        <div class="stat"><h3>5+</h3><p>Years Experience</p></div>
+                        <div class="stat"><h3>100%</h3><p>Satisfaction</p></div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="unnamed.webp" alt="FACELOOK Interior" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - FIXED -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Expertise</span>
+                <h2>Our <span class="highlight">Services</span></h2>
+                <p>Premium Beauty Treatments Tailored for You</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="bridal">
+                    <div class="service-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Flawless bridal looks that last all day</p>
+                    <div class="service-price">₹3500+</div>
+                </div>
+                <div class="service-card" data-service="hair">
+                    <div class="service-icon"><i class="fas fa-scissors"></i></div>
+                    <h3>Hair Styling</h3>
+                    <p>Latest trends & classic styles</p>
+                    <div class="service-price">₹800+</div>
+                </div>
+                <div class="service-card" data-service="facial">
+                    <div class="service-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Facial Treatment</h3>
+                    <p>Deep cleansing & rejuvenation</p>
+                    <div class="service-price">₹1200+</div>
+                </div>
+                <div class="service-card" data-service="threading">
+                    <div class="service-icon"><i class="fas fa-eye-dropper"></i></div>
+                    <h3>Threading & Waxing</h3>
+                    <p>Precise & pain-free hair removal</p>
+                    <div class="service-price">₹300+</div>
+                </div>
+                <div class="service-card" data-service="manicure">
+                    <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3>Manicure & Pedicure</h3>
+                    <p>Luxurious nail care experience</p>
+                    <div class="service-price">₹600+</div>
+                </div>
+                <div class="service-card" data-service="party">
+                    <div class="service-icon"><i class="fas fa-star"></i></div>
+                    <h3>Party Makeup</h3>
+                    <p>Glamorous looks for every occasion</p>
+                    <div class="service-price">₹2500+</div>
+                </div>
+                <div class="service-card" data-service="skincare">
+                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Skin Care</h3>
+                    <p>Personalized skincare solutions</p>
+                    <div class="service-price">₹900+</div>
+                </div>
+                <div class="service-card" data-service="mehendi">
+                    <div class="service-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3>Mehendi Design</h3>
+                    <p>Intricate & beautiful henna art</p>
+                    <div class="service-price">₹1500+</div>
+                </div>
+            </div>
+            <div class="services-cta">
+                <a href="#booking" class="btn btn-primary book-btn">Book Your Service</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why <span class="highlight">Choose Us</span></h2>
+                <p>Your Trusted Beauty Partner in Gunupur</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-users"></i></div>
+                    <h3>Experienced Staff</h3>
+                    <p>Certified professionals with 5+ years experience</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-bacteria"></i></div>
+                    <h3>Hygienic Environment</h3>
+                    <p>Sterilized tools & sanitized workspace</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Premium services at budget-friendly rates</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-box"></i></div>
+                    <h3>Premium Products</h3>
+                    <p>Salon-grade brands you can trust</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-smile"></i></div>
+                    <h3>Friendly Service</h3>
+                    <p>Personalized care with warm hospitality</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Modern Techniques</h3>
+                    <p>Latest trends & advanced technology</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="highlight">Work</span></h2>
+                <p>Transformations That Speak for Themselves</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="brid.webp" alt="Bridal Makeup" loading="lazy">
+                    <div class="gallery-overlay"><h3>Bridal Glam</h3></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ptd.webp" alt="Hair Styling" loading="lazy">
+                    <div class="gallery-overlay"><h3>Hair Magic</h3></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="int.jpg" alt="Salon Interior" loading="lazy">
+                    <div class="gallery-overlay"><h3>Luxury Space</h3></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="party.webp" alt="Party Makeup" loading="lazy">
+                    <div class="gallery-overlay"><h3>Party Ready</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Clients <span class="highlight">Say</span></h2>
+                <p>Loved by Thousands</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Best bridal makeup ever! Lasted entire wedding. Highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <img src="images.jpeg" alt="Priya">
+                        <div><h4>Priya S.</h4><span>Bridal Client</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Amazing hair styling! Perfect for my party look."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60" alt="Anita">
+                        <div><h4>Anita R.</h4><span>Regular Client</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"Facial made my skin glow! Very professional team."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60" alt="Sangeeta">
+                        <div><h4>Sangeeta M.</h4><span>Skin Care</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit <span class="highlight">Us</span></h2>
+                <p>3RG5+M7M, SH 4, Gunupur, Odisha 765022</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+918249686255" class="call-btn">Call Now</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Mon-Sat: 9AM-9PM | Sun: 10AM-6PM</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.451974399!2d83.883!3d19.083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDA0JzU3LjIiTiA4M8KwNTInNTIuNyJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="350" style="border:0;border-radius:20px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3><i class="fas fa-spa"></i> FACELOOK</h3>
+                    <p>Premium Beauty Parlour | Gunupur</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/+918249686255" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FACELOOK. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/8249686255" class="whatsapp-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+918249686255" class="call-btn-float"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
